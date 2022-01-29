@@ -13,6 +13,7 @@ function StartMenu() {
   const { photoEd, setPhotoEd } = useUserContext();
   const { musicPlayer, setMusicPlayer } = useUserContext();
   const { slither, setSlither } = useUserContext();
+  const { fpv, setFpv } = useUserContext();
   const { log, setLog } = useUserContext();
   console.log(log);
   return (
@@ -37,15 +38,16 @@ function StartMenu() {
             src="images/vscode1.png"
             title="Vs Code"
           />
-          <DeskIcons
-            clickEvent={() => setSlither(true)}
-            src="images/slither.png"
-            title="Slither.io"
-          />
+          
           <DeskIcons
             clickEvent={() => setFlappyBird(true)}
             src="images/flappybird.png"
             title="Flappy Bird"
+          />
+          <DeskIcons
+            clickEvent={() => setFpv(true)}
+            src="images/fpv.jpg"
+            title="After flood"
           />
           <DeskIcons
             clickEvent={() =>
