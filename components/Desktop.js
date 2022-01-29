@@ -11,6 +11,7 @@ function Desktop() {
   // const { menu, setMenu } = useUserContext();
   const [state, setState] = useState();
   const { fileApp, setFileApp } = useUserContext();
+  const { fpv, setFpv } = useUserContext();
   const { vscodeApp, setVscodeApp } = useUserContext();
   const { terminalApp, setTerminalApp } = useUserContext();
   const { braveApp, setBraveApp } = useUserContext();
@@ -116,16 +117,32 @@ function Desktop() {
       {slither ? (
         <Frame
           closeCustomEvent={() => setSlither(false)}
-          name="Slither.io"
+          name="Robostorm"
           fullScreen={() => setState({ width: "100vw", height: "100vh" })}
           customSize={{ width: 900, height: 600 }}
-          iframeSrc="http://slither.io/"
+          iframeSrc="https://robostorm.io/"
         />
       ) : (
         ""
       )}
-      <div className=" -z-10 space-y-5 absolute top-5 left-5">
-        <DeskIcons src="images/recycle.png" title="Recycle Bin" />
+      {fpv ? (
+        <Frame
+          closeCustomEvent={() => setFpv(false)}
+          name="After Flood"
+          fullScreen={() => setState({ width: "100vw", height: "100vh" })}
+          customSize={{ width: 900, height: 600 }}
+          iframeSrc="https://playcanv.as/p/44MRmJRU/"
+        />
+      ) : (
+        ""
+      )}
+      <div className=" flex-wrap -z-10 space-y-5 absolute top-5 left-5">
+        <DeskIcons
+          src="images/recycle.png"
+          customClickEvent={() => setFpv(true)}
+          src="images/fpv.jpg"
+          title="After Flood"
+        />
         <DeskIcons
           customClickEvent={() => setBraveApp(true)}
           src="images/braveBrowser.png"
@@ -148,8 +165,8 @@ function Desktop() {
         />
         <DeskIcons
           customClickEvent={() => setSlither(true)}
-          src="images/slither.png"
-          title="Slither io"
+          src="images/robostorm.jpg"
+          title="Robostorm"
         />
         <DeskIcons
           customClickEvent={() => setTerminalApp(true)}

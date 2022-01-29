@@ -8,6 +8,7 @@ export const UserContextProvider = ({ children }) => {
   const [log, setLog] = useState(true);
   const [menu, setMenu] = useState(false);
   const [bg, setBg] = useState(true);
+  const [fpv, setFpv] = useState(false);
 
   const [app, setApp] = useState("");
   const [fullscreen, setFullscreen] = useState(false);
@@ -50,6 +51,8 @@ export const UserContextProvider = ({ children }) => {
     setMenu,
     bg,
     setBg,
+    fpv,
+    setFpv,
   };
 
   return (
