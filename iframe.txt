@@ -1,0 +1,30 @@
+<iframe
+        src="https://playcanv.as/p/2OlkUaxF/"
+        height="400"
+        width="250"
+        title="Iframe Example"
+      ></iframe>
+      <iframe
+        src="https://vscode.dev/"
+        height="450"
+        width="800"
+        title="Iframe Example"
+      ></iframe>
+      <iframe
+        src="https://git-terminal.js.org/"
+        height="450"
+        width="800"
+        title="Iframe Example"
+      ></iframe>
+      <iframe
+        src="https://tinyfilemanager.github.io/demo/"
+        height="450"
+        width="800"
+        title="Iframe Example"
+      ></iframe>
+      <iframe className=" rounded-3xl"
+        src="https://musicplayerpawan.netlify.app/"
+        height="900"
+        width="420"
+        title="Iframe Example"
+      ></iframe>
