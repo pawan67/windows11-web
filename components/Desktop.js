@@ -138,7 +138,7 @@ function Desktop() {
       )}
       <div className=" flex-wrap -z-10 space-y-5 absolute top-5 left-5">
         <DeskIcons
-          src="images/recycle.png"
+          
           customClickEvent={() => setFpv(true)}
           src="images/fpv.jpg"
           title="After Flood"
