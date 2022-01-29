@@ -24,14 +24,16 @@ export default function Home() {
     <>
       <Head>
         <title>Windows 11</title>
-        <link rel="icon" href="images/start1.png"></link>
+        <link rel="icon" href="images/win11logo.png"></link>
       </Head>
 
-     
-      
-      {splash ? <SplashScreen/> : <div className=" overflow-hidden bg-black">
-        {log ? <Login /> : <Desktop />}
-      </div>}
+      {splash ? (
+        <SplashScreen />
+      ) : (
+        <div className=" overflow-hidden bg-black">
+          {log ? <Login /> : <Desktop />}
+        </div>
+      )}
     </>
   );
 }

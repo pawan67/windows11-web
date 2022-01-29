@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        wallpaper: "url('/images/832143.png')",
+        wallpaper: "url('/images/lockWall.jpg')",
         "wallpaper-1": "url('/images/windows11.jpg')",
         "wallpaper-light": "url('/images/windows11light.jpg')",
       },
