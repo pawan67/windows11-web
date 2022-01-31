@@ -4,7 +4,7 @@ function Icons({ src, customClickEvent }) {
   return (
     <div onClick={customClickEvent}>
       <img
-        className=" hover:saturate-200 hover:scale-90 rounded-sm mx-1  h-8"
+        className="  hover:saturate-200  hover:scale-95 rounded-sm mx-1  h-7"
         src={src}
       />
     </div>
