@@ -23,6 +23,7 @@ export default function Home() {
   return (
     <>
       <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=0.5"/>
         <title>Windows 11</title>
         <link rel="icon" href="images/win11logo.png"></link>
       </Head>

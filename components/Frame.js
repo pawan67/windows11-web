@@ -12,10 +12,11 @@ import { motion } from "framer-motion";
 function Frame({ iframeSrc, name, closeCustomEvent, customSize, fullScreen }) {
   const { app, setApp } = useUserContext();
   const { fullscreen, setFullscreen } = useUserContext();
-  
+  const { menu, setMenu } = useUserContext();
+
   const [state, setState] = useState(customSize);
   return (
-    <Draggable >
+    <Draggable>
       <Resizable
         style={{ marginLeft: 0, marginTop: 0 }}
         size={{ width: state.width, height: state.height }}
@@ -26,7 +27,8 @@ function Frame({ iframeSrc, name, closeCustomEvent, customSize, fullScreen }) {
           });
         }}
       >
-        <div 
+        <div
+          onClick={() => setMenu(false)}
           data-aos="zoom-in"
           className=" w-full h-full z-50 shadow-2xl border  rounded-md overflow-hidden border-gray-600   absolute "
         >
@@ -35,7 +37,7 @@ function Frame({ iframeSrc, name, closeCustomEvent, customSize, fullScreen }) {
             <div className=" h-full flex items-center ">
               <BsDash className=" p-1 h-full w-8 px-2 hover:bg-[#444444]" />
               <VscChromeMaximize
-                onClick={() => setState({width: '100vw', height: '100vh'})}
+                onClick={() => setState({ width: "100vw", height: "100vh" })}
                 className=" px-2 p-1 h-full w-8  hover:bg-[#444444]"
               />
               <IoCloseOutline
@@ -45,6 +47,8 @@ function Frame({ iframeSrc, name, closeCustomEvent, customSize, fullScreen }) {
             </div>
           </div>
           <iframe
+          onClick={() => setMenu(false)}
+
             className="bg-white w-full h-[95%]  rounded-b-md "
             src={iframeSrc}
             title="vscode"

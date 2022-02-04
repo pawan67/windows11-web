@@ -28,10 +28,9 @@ function Desktop() {
   }, []);
   return (
     <div
-      // onClick={()=> setMenu(false)}
       data-aos-duration="1500"
       data-aos="fade"
-      className="w-screen overflow-hidden transition  h-screen text-white bg-wallpaper-1 dark:bg-wallpaper-light bg-cover object-fill"
+      className="w-screen overflow-hidden transition  h-screen text-white bg-wallpaper-1 dark:bg-wallpaper-light  duration-1000 bg-cover object-fill"
     >
       <TaskBar />
       {fileApp ? (

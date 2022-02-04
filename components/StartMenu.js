@@ -17,7 +17,7 @@ function StartMenu() {
   const { log, setLog } = useUserContext();
   console.log(log);
   return (
-    <div className="w-[600px]  border h-[650px] bg-[#242424]/90 rounded-md border-gray-700 backdrop-blur-sm dark:bg-[#f3f3f3] dark:border-gray-400 text-white dark:text-gray-800  flex flex-col justify-between -z-30 p-10">
+    <div className="w-[600px]    border h-[650px] bg-[#242424]/90 rounded-md border-gray-700 backdrop-blur-sm dark:bg-[#f3f3f3] dark:border-gray-400 text-white dark:text-gray-800  flex flex-col justify-between z-30 p-10">
       <div>
         <input
           placeholder="Type Here to search"
@@ -38,7 +38,7 @@ function StartMenu() {
             src="images/vscode1.png"
             title="Vs Code"
           />
-          
+
           <DeskIcons
             clickEvent={() => setFlappyBird(true)}
             src="images/flappybird.png"

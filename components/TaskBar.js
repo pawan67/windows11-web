@@ -96,7 +96,7 @@ function TaskBar() {
         <StartMenu />
       </div>
       <div
-        className={`fixed  ${
+        className={`fixed    ${
           taskM ? "bottom-14 right-2 transition-all" : "-right-[1000px]  "
         }      z-50`}
       >
