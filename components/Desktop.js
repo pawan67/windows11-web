@@ -107,8 +107,8 @@ function Desktop() {
         <Frame
           closeCustomEvent={() => setMusicPlayer(false)}
           name="Music Player"
-          customSize={{ width: 420, height: 830 }}
-          iframeSrc="https://musicplayerpawan.netlify.app/"
+          customSize={{ width: 900, height: 650 }}
+          iframeSrc="https://music-player-pawan67.vercel.app/"
         />
       ) : (
         ""
