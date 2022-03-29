@@ -16,7 +16,7 @@ function TaskBar() {
   const { terminalApp, setTerminalApp } = useUserContext();
   const { vscodeApp, setVscodeApp } = useUserContext();
   const { braveApp, setBraveApp } = useUserContext();
-  const { spotifyApp, setSpotifyApp } = useUserContext();
+  const { musicPlayer, setSpotifyApp, setMusicPlayer } = useUserContext();
 
   const d = new Date();
 
@@ -64,9 +64,9 @@ function TaskBar() {
 
       <Icons
         customClickEvent={() => {
-          spotifyApp ? setSpotifyApp(false) : setSpotifyApp(true);
+          musicPlayer ? setMusicPlayer(false) : setMusicPlayer(true);
         }}
-        src="images/spotify.png"
+        src="images/music-note.png"
       />
       <div className=" flex absolute right-4">
         <div
